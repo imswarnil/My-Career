@@ -17,15 +17,11 @@
             <div class="uk-container uk-container-small uk-flex uk-flex-middle uk-flex-wrap">
                 <!-- Left side: Title, Heading, and Search -->
                 <div class="uk-width-1-2@s uk-text-center@s uk-margin-top@m">
-                    {% if page.hero.image %}
-                        <p class="hero-image uk-text-center"><img src="{{ site.uploads | absolute_url }}{{ page.hero.image }}" alt="Hero"></p>
-                    {% endif %}
                     <h1 class="uk-heading-primary uk-margin-remove-top">{{ page.hero.title }}</h1>
                     {% if page.hero.subtitle %}<p class="uk-text-lead">{{ page.hero.subtitle }}</p>{% endif %}
         
                     {% if page.hero.search %}
                         <div class="hero-search">
-        
                             <!-- Html Elements for Search -->
                             <div class="uk-position-relative">
                                 <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
@@ -36,28 +32,21 @@
                             </div>
         
                             <script>
-                                SimpleJekyllSearch({
-                                    searchInput: document.getElementById('search-hero'),
-                                    resultsContainer: document.getElementById('search-hero-results'),
-                                    noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
-                                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                                    json: "{{ '/search.json' | relative_url }}"
-                                });
-        
-                                searchResults("search-hero");
-        
+                                // Include your SimpleJekyllSearch code here
                             </script>
-        
                         </div>
                     {% endif %}
                 </div>
         
                 <!-- Right side: Image or SVG -->
                 <div class="uk-width-1-2@s uk-text-center@s uk-margin-top@m">
-                    <!-- Add your image or SVG here -->
+                    {% if page.hero.image %}
+                        <p class="hero-image uk-text-center"><img src="{{ site.uploads | absolute_url }}{{ page.hero.image }}" alt="Hero"></p>
+                    {% endif %}
                 </div>
             </div>
         </div>
+        
         
 
     </div>
