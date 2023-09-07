@@ -2,10 +2,12 @@
 layout: default
 ---
 
+
+
 <div class="uk-section">
     <div class="uk-container">
         <div class="uk-grid-large" data-uk-grid>
-            <div class="sidebar-fixed-width uk-visible@m" uk-sticky="end: !.uk-height-large; offset: 80" >
+            <div class="sidebar-fixed-width uk-visible@m">
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     {% for section in site.data.navigation_docs %}
                     <h5>{{ section.title }}</h5>
@@ -19,9 +21,9 @@ layout: default
                     {% endfor %}
                 </div>
             </div>
-            {% include ad.html type="square" %}
 
             <div class="uk-width-1-1 uk-width-expand@m">
+                {% include ad.html type="small-leaderboard" %}
                 <article class="uk-article">
                     <h1 class="uk-article-title">{{ page.title | escape }}</h1>
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
@@ -61,6 +63,7 @@ layout: default
             </div>
     </div>
 </div>
+
 
 <footer class="uk-section uk-section-secondary">
     <div class="uk-container uk-container-large">
