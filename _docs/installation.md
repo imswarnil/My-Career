@@ -35,6 +35,25 @@ p {
     color: red;
 }
 ```
+<div class="uk-cover-container uk-height-medium uk-overflow-hidden uk-position-relative">
+  <img src="your-image.jpg" alt="Background Image" uk-cover>
+  <div class="uk-position-center uk-text-center uk-light">
+    <!-- Your Ad Code Here -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
+     crossorigin="anonymous"></script>
+    <!-- Square (Responsive) -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1291242080282540"
+         data-ad-slot="7663977887"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
 
 ## Markdown input 🛬
 
