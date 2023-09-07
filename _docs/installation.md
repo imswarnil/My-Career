@@ -5,6 +5,9 @@ author: sara
 tags: [setup]
 ---
 
+
+  {% include ad.html type="small-leaderboard" %}
+
 # Hi This is Heading 
 
 Install the dependencies with [Bundler](http://bundler.io/):
