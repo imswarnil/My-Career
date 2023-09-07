@@ -6,9 +6,8 @@ layout: default
 
 <div class="uk-section">
     <div class="uk-container">
-        
         <div class="uk-grid-large" data-uk-grid>
-            <div class="uk-visible@m" uk-sticky="end: !.uk-height-large; offset: 80" >
+            <div class="sidebar-fixed-width uk-visible@m" uk-sticky="end: !.uk-height-large; offset: 80" >
                 <div class="sidebar-docs uk-margin-top">
                     {% for section in site.data.navigation_docs %}
                     <h5>{{ section.title }}</h5>
