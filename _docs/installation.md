@@ -5,8 +5,6 @@ author: sara
 tags: [setup]
 ---
 
-{% include ad.html %}
-
 # Hi This is Heading 
 
 Install the dependencies with [Bundler](http://bundler.io/):
@@ -21,8 +19,6 @@ bundle exec jekyll serve
 ```
 
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
-
-{% include ad.html %}
 
 ## Markdown output 🛫
 
