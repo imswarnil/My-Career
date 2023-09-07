@@ -1,10 +1,10 @@
 # Changelog page source
 
-- title: Version 1.0.0
-  label: STABLE
-  date: Oct 21, 2017
+- title: I Failed To Get Job In College
+  label: Graduated 
+  date: July 1, 2017
   list:
-  - Added Slideshow component
+  - I Completed My Engineering
   - Added style support for radio and minusbox in Firefox
   - Removed class from Section component
   - Allow fullscreen mode for videos in Lightbox
