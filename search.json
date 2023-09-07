@@ -2,7 +2,8 @@
 layout: null
 ---
 [
-  {% for doc in site.docs %}
+  {% assign combined = site.docs | concat: site.posts %}
+  {% for doc in combined %}
     {
       "title"    : "{{ doc.title | escape }}",
       "category" : "{{ doc.category }}",
