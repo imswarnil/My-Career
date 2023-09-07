@@ -6,6 +6,9 @@ left:
 
   - title: Docs
     url: /docs/installation/
+  
+  - title: My Journey
+    url: url: /changelog-timeline/
 
   - title: Blog
     url: /blog/
