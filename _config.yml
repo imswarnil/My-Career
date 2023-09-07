@@ -19,7 +19,7 @@ permalink:          /:title/
 url:                "https://bangalorejobseekers.imswarnil.com/"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo: /assets/img/Bangalore-Job-Seekers-Guide-Logo.png          
+logo: uploads/Bangalore-Job-Seekers-Guide-Logo.png
 
 navbar:
     sticky:         true
