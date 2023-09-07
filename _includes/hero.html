@@ -35,14 +35,7 @@
                                     searchInput: document.getElementById('search-hero'),
                                     resultsContainer: document.getElementById('search-hero-results'),
                                     noResultsText: '<li class="no-results">No results found</li>',
-                                    searchResultTemplate: '<li class="uk-flex uk-flex-middle uk-flex-between">' +
-                                        '<div class="uk-margin-small-right">' +
-                                          '<span class="uk-label uk-background-white uk-text-danger">{tags}</span>' +
-                                        '</div>' +
-                                        '<div>' +
-                                          '<a href="{url}" class="uk-link-text">{title}</a>' +
-                                        '</div>' +
-                                      '</li>',
+                                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
                                     json: "/search.json"
                                 });
             
