@@ -5,17 +5,6 @@ author: sara
 tags: [setup]
 ---
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
-     crossorigin="anonymous"></script>
-<!-- The Leaderboard (728×90) -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-1291242080282540"
-     data-ad-slot="1864856299"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 # Hi This is Heading 
 
 Install the dependencies with [Bundler](http://bundler.io/):
@@ -73,13 +62,3 @@ You can also use Markdown to create various text blocks, such as:
 *   Code blocks - Start a line with `ˋˋˋ`.
 *   Horizontal lines - Start a line with `---`
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
-     crossorigin="anonymous"></script>
-<!-- The Leaderboard (728×90) -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-1291242080282540"
-     data-ad-slot="1864856299"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
