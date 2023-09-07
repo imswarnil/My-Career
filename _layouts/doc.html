@@ -5,6 +5,7 @@ layout: default
 
 
 <div class="uk-section">
+    {% include ad.html type="large-leaderboard" %}
     <div class="uk-container">
         <div class="uk-grid-large" data-uk-grid>
             <div class="sidebar-fixed-width uk-visible@m">
@@ -26,7 +27,6 @@ layout: default
             </div>
 
             <div class="uk-width-1-1 uk-width-expand@m">
-                {% include ad.html type="small-leaderboard" %}
                 <article class="uk-article">
                     <h1 class="uk-article-title">{{ page.title | escape }}</h1>
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
@@ -65,6 +65,7 @@ layout: default
 
             </div>
     </div>
+  </div>
 </div>
 
 <div class="uk-container uk-container-large">
