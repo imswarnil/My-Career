@@ -32,7 +32,15 @@
                             </div>
         
                             <script>
-                                // Include your SimpleJekyllSearch code here
+                                SimpleJekyllSearch({
+                                    searchInput: document.getElementById('search-hero'),
+                                    resultsContainer: document.getElementById('search-hero-results'),
+                                    noResultsText: '<li class="no-results">No results found</li>',
+                                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                    json: "/search.json"
+                                });
+            
+                                searchResults("search-hero");
                             </script>
                         </div>
                     {% endif %}
@@ -46,8 +54,5 @@
                 </div>
             </div>
         </div>
-        
-        
-
     </div>
 </header>
