@@ -5,6 +5,8 @@ author: sara
 tags: [setup]
 ---
 
+{% include ad.html %}
+
 Install the dependencies with [Bundler](http://bundler.io/):
 
 ```bash
