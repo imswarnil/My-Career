@@ -36,9 +36,9 @@ p {
 }
 ```
 
-<div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+<div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('https://i.pinimg.com/originals/bc/8d/02/bc8d026b258afad9a3d4b1b84ed6721f.gif');">
   
-    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; y: 100,0"> {% include ad.html type="small-leaderboard" %}
+    <div class="uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; y: 100,0"> {% include ad.html type="small-leaderboard" %}
     </div> 
 
 </div>
