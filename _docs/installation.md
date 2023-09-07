@@ -19,3 +19,5 @@ bundle exec jekyll serve
 ```
 
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+
+{% include ad.html %}
