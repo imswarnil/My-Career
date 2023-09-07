@@ -73,23 +73,6 @@
 <style>
      .top-leaderboard {
       height: 90px;
-      border-left: 10px solid #E53935;
-      border-right: 10px solid #E53935;
-      border-radius: 10px;
-      background-color: #f7f7f7;
-      display: block;
-      justify-content: center;
-      align-items: center;
-      margin: 2em auto;
-      text-align: center;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-      overflow: hidden; /* Added this line to ensure the border is visible */
-     }
-     
-     @media (max-width: 799px) {
-       .top-leaderboard {
-         height: 90px;
-       }
      }
      
      @media (max-width: 499px) {
@@ -99,11 +82,12 @@
      }
 </style>
 
-<ins class="adsbygoogle top-leaderboard "
-     data-ad-client="{{ site.data-ad-client }}"
-     data-ad-slot="3487917390" 
-     data-full-width-responsive="true"
-     ></ins>
+<div class="uk-flex uk-flex-middle uk-padding-small" uk-scrollspy="cls: uk-animation-slide-bottom; target: .animate-on-scroll; delay: 200;">
+    <ins class="adsbygoogle uk-border-rounded top-leaderboard uk-align-center animate-on-scroll"
+      data-ad-client="{{ site.data-ad-client }}"
+      data-ad-slot="3487917390">
+   </ins>
+</div>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 
