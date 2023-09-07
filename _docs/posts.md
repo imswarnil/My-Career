@@ -11,6 +11,19 @@ YEAR-MONTH-DAY-title.MARKUP
 ```
 Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. For example, the following are examples of valid post filenames:
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
+     crossorigin="anonymous"></script>
+<!-- Horizontal ( Responsive ) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1291242080282540"
+     data-ad-slot="8939839370"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ```
 2011-12-31-new-years-eve-is-awesome.md
 2012-09-12-how-to-write-a-blog.md
