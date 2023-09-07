@@ -10,7 +10,25 @@ hero:
 
 {% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}
 
-{% include ad.html %}
+<div class="uk-card uk-card-default uk-card-body uk-card-small">
+    <!-- AdSense Placeholder -->
+    <div class="uk-margin">
+        <!-- AdSense Script -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
+             crossorigin="anonymous"></script>
+        
+        <!-- AdSense Ad -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1291242080282540"
+             data-ad-slot="8939839370"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</div>
 
 {% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast in Jekyll" %}
 
