@@ -8,6 +8,7 @@ tags: [setup]
 {% include ad.html %}
 
 # Hi This is Heading 
+
 Install the dependencies with [Bundler](http://bundler.io/):
 
 ```bash
