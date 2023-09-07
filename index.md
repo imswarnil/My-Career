@@ -2,7 +2,7 @@
 layout: page
 width: expand
 hero:
-    title: Get Job In Bangalore?
+    title: Welcome To Bangalore Job Seekers Guide
     subtitle: Search or browse in depth articles and videos on everything on Docs Jekyll theme, from basic theme setup to customisation and development
     image: knowledge.svg
     search: true
