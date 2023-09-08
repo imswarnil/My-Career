@@ -30,6 +30,7 @@ bundle exec jekyll serve
   metadata-viewer-user-id="Video - 1"
   primary-color="#E53935"
   secondary-color="#fff"
+  poster= "https://img.freepik.com/premium-vector/best-attractive-colorful-youtube-thumbnail-design_672856-124.jpg"
 ></mux-player>
 
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
