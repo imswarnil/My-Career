@@ -31,6 +31,7 @@ bundle exec jekyll serve
   primary-color="#fff"
   secondary-color="#E53935"
   poster= "https://img.freepik.com/premium-vector/best-attractive-colorful-youtube-thumbnail-design_672856-124.jpg"
+  title = "my first video"
 ></mux-player>
 
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
