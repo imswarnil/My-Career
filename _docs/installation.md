@@ -28,7 +28,7 @@ bundle exec jekyll serve
   playback-id="hgeHZVD6JCv4CGEKx7ubvIMXBeHaN95qH2alSlu022dU"
   metadata-video-title="Placeholder (optional)"
   metadata-viewer-user-id="Placeholder (optional)"
-  primary-color="#FFFFFF"
+  primary-color="#E53935"
   secondary-color="#000000"
 ></mux-player>
 
