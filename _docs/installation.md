@@ -23,6 +23,15 @@ Run the following to generate your site:
 bundle exec jekyll serve
 ```
 
+<mux-player
+  stream-type="on-demand"
+  playback-id="hgeHZVD6JCv4CGEKx7ubvIMXBeHaN95qH2alSlu022dU"
+  metadata-video-title="Placeholder (optional)"
+  metadata-viewer-user-id="Placeholder (optional)"
+  primary-color="#FFFFFF"
+  secondary-color="#000000"
+></mux-player>
+
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
 ## Markdown output 🛫
