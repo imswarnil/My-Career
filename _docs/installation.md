@@ -28,8 +28,8 @@ bundle exec jekyll serve
   playback-id="hgeHZVD6JCv4CGEKx7ubvIMXBeHaN95qH2alSlu022dU"
   metadata-video-title="Placeholder (optional)"
   metadata-viewer-user-id="Placeholder (optional)"
-  primary-color="#E53935"
-  secondary-color="#000000"
+  primary-color="000"
+  secondary-color="#E53935"
 ></mux-player>
 
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
