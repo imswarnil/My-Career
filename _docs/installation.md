@@ -26,9 +26,9 @@ bundle exec jekyll serve
 <mux-player
   stream-type="on-demand"
   playback-id="hgeHZVD6JCv4CGEKx7ubvIMXBeHaN95qH2alSlu022dU"
-  metadata-video-title="Placeholder (optional)"
-  metadata-viewer-user-id="Placeholder (optional)"
-  primary-color="000"
+  metadata-video-title="Video - 1"
+  metadata-viewer-user-id="Video - 1"
+  primary-color="#fff"
   secondary-color="#E53935"
 ></mux-player>
 
