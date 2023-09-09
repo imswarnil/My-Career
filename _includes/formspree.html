@@ -48,8 +48,7 @@
     <div id="adContainer"></div>
   </div>
   <button id="playButton">Play</button>
-  {{/*  <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
-  <script type="text/javascript" src="ads.js"></script>  */}}
+
 
   <style>
     #mainContainer {
@@ -92,15 +91,13 @@
   </style>
 
   <video
-    id="my-player"
+    id="contentElement"
     class="video-js"
     controls
     preload="auto"
     poster="//vjs.zencdn.net/v/oceans.png"
     data-setup='{}'>
-  <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
-  <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
-  <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+  <source src="https://storage.googleapis.com/gvabox/media/samples/stock.mp4" type="video/mp4"></source>
   <p class="vjs-no-js">
     To view this video please enable JavaScript, and consider upgrading to a
     web browser that
@@ -109,3 +106,28 @@
     </a>
   </p>
 </video>
+
+
+<div id="mainContainer">
+    <div id="content">
+        <video
+        id="contentElement"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="//vjs.zencdn.net/v/oceans.png"
+        data-setup='{}'>
+      <source src="https://storage.googleapis.com/gvabox/media/samples/stock.mp4" type="video/mp4"></source>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank">
+          supports HTML5 video
+        </a>
+      </p>
+    </video>
+    </div>
+    <div id="adContainer"></div>
+  </div>
+
+<button id="playButton">Play</button>
