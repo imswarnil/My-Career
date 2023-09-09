@@ -38,3 +38,17 @@
 </form>
 {% endif %}
 
+<video id="content_video" class="video-js vjs-default-skin vjs-16-9" controls preload="auto" width="640" height="360">
+    <source src="https://d2s16lg4p2rvcl.cloudfront.net/binary/2019/5/16/13/1496053425408-48zr65/4cc5_rocketman_i_biografen_29.maj_dansk_trailer_2-1558008155447.mp4?Expires=1565178782&amp;Signature=O3I~oPvOwt1o68DFPDlCXVjACNzMlhkC0GdUEwlQ8XsOHK1BKrqKHD41B4-nHVbsea0~e7iGDkwAg63byJwo3KPbqV2248gSPq2A7kU5xsQLGm5VzQhKbP8ZKTbQP5kqWZA5xlkVCs8mkkE3i4WoiEqHr-S31x5mfnmwq7pvkdzgsU2mFiG-xD3LtXEJUteGvbTXuA~60CNuEZajL-rib02H51DVzHhF6-jG7DT~ngKtRtICamAOtzbjcGNiZ9TAPMzekylajoyqyidUnrAKEs099p6yApHlQ7SLwbrq7Rsu3CDcBMp00KUSapOX5NFPfH-rkfSIJnWBkCYhV~PgKA__&amp;Key-Pair-Id=APKAIL4UOMSEWYHIHUDA" type="video/mp4"> 
+  </video>
+  <script>
+    var player = videojs('content_video');
+
+var options = {
+  id: 'content_video',
+  adTagUrl: 'http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&cust_params=sample_ar%3Dpremidpostpod%26deployment%3Dgmf-js&cmsid=496&vid=short_onecue&correlator='
+};
+
+player.ima(options);
+
+  </script>

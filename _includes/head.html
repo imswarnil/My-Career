@@ -15,4 +15,10 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
+
+  <!-- Load dependent stylesheets. -->
+  <link rel="stylesheet" href="//googleads.github.io/videojs-ima/node_modules/video.js/dist/video-js.min.css" />
+  <link rel="stylesheet" href="//googleads.github.io/videojs-ima/node_modules/videojs-contrib-ads/dist/videojs.ads.css" />
+  <link rel="stylesheet" href="//googleads.github.io/videojs-ima/dist/videojs.ima.css" />
+
 </head>
