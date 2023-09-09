@@ -3,12 +3,12 @@ layout: page
 width: expand
 hero:
     title: Welcome To Bangalore Job Seekers Guide
-    subtitle: Search or browse in depth articles and videos on everything on Docs Jekyll theme, from basic theme setup to customisation and development
+    subtitle: Follow Swarnil's path to succeed in Bangalore with job search, relocation guidance, and valuable articles and videos tailored for Bangalore job seekers.
     image: knowledge.svg
     search: true
 ---
 
-  {% include ad.html type="small-leaderboard" %}
+  {% include ad.html type="top-leaderboard" %}
 
 {% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}
 
