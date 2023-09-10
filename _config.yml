@@ -1,12 +1,9 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Welcome to Job Seekers Guide
+# This config file is meant for settings that affect Job Seekers Guide Project.
 
 # Site title and description
-title:             Bangalore Job Seekers Guide
-description:        Documentation Jekyll theme.
+title :        Job Seekers Guide
+description:      
 lang:               en
 
 # Site subpath, e.g. /blog
