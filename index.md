@@ -7,6 +7,7 @@ hero:
     image: knowledge.svg
     search: true
 ---
+<iframe width="976" height="549" src="https://www.youtube.com/embed/-g4cl3Uqcdo" title="3 Steps To More Job Interviews for Your Dream Career in the Salesforce Ecosystem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 {% include ad.html type="top-leaderboard" %}
 
