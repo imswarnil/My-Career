@@ -6,7 +6,7 @@ tags: [setup]
 comments: true
 
 ---
-
+<iframe width="358" height="637" src="https://www.youtube.com/embed/ZOrvVyRufBg" title="Visited Goa With Friends - Travel - 1 #travel #goa #friends #softwareengineer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
   {% include ad.html type="small-leaderboard" %}
 
