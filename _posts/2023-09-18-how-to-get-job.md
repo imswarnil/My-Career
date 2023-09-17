@@ -1,5 +1,5 @@
 ---
-title: How To Setup Naked Domain SSL With Github Pages
+title: How To Get Job In Bangalore
 author: swarnil
 categories: [news, feathured]
 ---
