@@ -12,8 +12,13 @@
         
         <ul class="uk-list uk-list-large uk-margin-medium-top">
         {% for post in site.posts %}
-            {% if post.categories contains 'featured' %}
+            {% if post.tags contains 'featured' or post.categories contains 'featured' %}
             <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+        {% for doc in site.docs %}
+            {% if doc.tags contains include.tag or doc.categories contains include.tag %}
+            <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
             {% endif %}
         {% endfor %}
         </ul>
