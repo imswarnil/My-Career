@@ -10,18 +10,38 @@
             <p class="uk-text-center uk-text-lead">{{ include.subtitle | escape }}</p>
         {% endif %}
         
-        <ul class="uk-list uk-list-large uk-margin-medium-top">
-        {% for post in site.posts %}
-            {% if post.tags contains 'featured' or post.categories contains 'featured' %}
-            <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-        {% for doc in site.docs %}
-            {% if doc.tags contains include.tag or doc.categories contains include.tag %}
-            <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-        </ul>
+        <div class="uk-grid uk-grid-medium uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Popular Documents</h3>
+                    <div class="uk-icon">
+                        <span class="material-icons">description</span>
+                    </div>
+                    <ul class="uk-list uk-list-large">
+                    {% for doc in site.docs %}
+                        {% if doc.tags contains include.tag or doc.categories contains include.tag %}
+                        <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title">Popular Articles</h3>
+                    <div class="uk-icon">
+                        <span class="material-icons">article</span>
+                    </div>
+                    <ul class="uk-list uk-list-large">
+                    {% for post in site.posts %}
+                        {% if post.tags contains include.tag or post.categories contains include.tag %}
+                        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
