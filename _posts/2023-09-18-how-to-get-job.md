@@ -4,7 +4,6 @@ author: swarnil
 categories: [news, featured]
 ---
 
-{:.no_toc}
 * TOC
 {:toc}
 
