@@ -6,6 +6,7 @@ title: Blog
 <div class="uk-section">
     <div class="uk-container uk-container-expand">
         <h1 class="uk-article-title uk-text-center">{{ page.title | escape }}</h1>
+        {% include ad.html type="top-leaderboard" %}
         <div class="uk-grid uk-child-width-1-3@m" uk-grid>
             {% for post in paginator.posts %}
             <div class="uk-width-1-3@m">
@@ -64,8 +65,7 @@ title: Blog
             {% endif %}
             {% endfor %}
         </div>
-
         {% include paginate-blog.html %}
-
     </div>
+    {% include ad.html type="top-leaderboard" %}
 </div>
