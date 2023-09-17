@@ -16,7 +16,7 @@ permalink:          /:title/
 url:                "https://job.imswarnil.com/"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo: /bjsg.gif
+logo: /Job-Seekers-Project.gif
 
 navbar:
     sticky:         true
