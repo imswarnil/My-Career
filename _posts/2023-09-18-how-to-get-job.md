@@ -1,7 +1,7 @@
 ---
 title: How To Setup Naked Domain SSL With Github Pages
-author: daniel
-categories: [news, updates]
+author: swarnil
+categories: [news, feathured]
 ---
 
 #### Sections in this article
