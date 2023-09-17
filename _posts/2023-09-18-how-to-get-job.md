@@ -1,7 +1,7 @@
 ---
 title: How To Get Job In Bangalore
 author: swarnil
-categories: [news, feathured]
+categories: [news, featured]
 ---
 
 #### Sections in this article
