@@ -20,7 +20,7 @@ logo: /Job-Map.png
 
 navbar:
     sticky:         true
-    search:         true
+    search:         false
   
 # Default author settings
 author:
