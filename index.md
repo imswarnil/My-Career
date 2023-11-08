@@ -32,6 +32,22 @@ hero:
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/uV3eTXpEBOg" frameborder="0" allowfullscreen></iframe>
             </div>
         </p>
+        <!-- JSON-LD for Video -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Your Video Title",
+                "description": "Description of your video",
+                "thumbnailUrl": "URL to video thumbnail",
+                "uploadDate": "2023-11-06T08:00:00Z",
+                "duration": "PT5M", // Replace with video duration
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Your Organization Name"
+                }
+            }
+        </script>
     </div>
     <!-- Right side: Title, Heading, and Buttons -->
     <div class="uk-width-1-2@s uk-margin-top@m" style="padding-left: 20px;">
