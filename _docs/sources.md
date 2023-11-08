@@ -9,3 +9,7 @@ author: evan
 - Google maps [https://www.google.com/maps](https://www.google.com/maps)
 - UIkit front end framework [https://getuikit.com/](https://getuikit.com/)
 - Jekyll CML [https://jekyllrb.com/](https://jekyllrb.com/)
+
+## Icons
+
+<div> College Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
