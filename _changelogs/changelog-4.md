@@ -1,13 +1,32 @@
 ---
-title: 🚀 April Updates
-date: 2019-04-22
+title: 🚀 Version 1.0.0 - Initial Release (Nov,23)
+date: 2023-11-08
 ---
+🚀 Welcome to 'Swarnil's Career Roadmap' - Your Career Companion!
 
-April comes with a whole bunch of updates across our stack, the main focus for this month in regards to what was released is around:
+In this initial release, I am excited to start documenting my corporate journey working as software engineer in IT company as salesforce professional. This Project aim to help other poeple career success by learning and following my path.
 
-Further improving system, and allowing you to compare your results against wide averages for deflection rates
-Improvements to our tool to give you and your team more control
-And various other new features, updates, and bug fixes along the way.
+'Swarnil's Career Roadmap' is here to provide you with valuable insights and guidance as you navigate the professional world. Here's what you can expect:
+
+Key Features:
+
+📖 Career Insights: Dive into my personal career journey, learn from my experiences, and gain insights to shape your own path.
+🗺️ Career Exploration: Discover different aspects of the corporate world and how to thrive in it.
+💼 Professional Growth Tips: Get practical tips and strategies for career advancement.
+🌟 Inspiration: Find motivation to reach your goals and overcome challenges.
+
+What's New in Version 1.0.0:
+
+Introduction to Swarnil's Career Journey: An overview of my career story and the lessons you can learn from it.
+Career Exploration: Insights into different career paths and how to choose the right one for you.
+Initial Tips: Some initial tips and advice to get you started on your career journey.
+Motivational Content: Inspirational stories and messages to keep you motivated.
+Upcoming Features:
+
+📚 Career Resource Library: Access a collection of articles, resources, and recommended books to further your knowledge.
+🎙️ Guest Interviews: Learn from industry experts through exclusive interviews.
+💬 Community Forum: Connect with others on a similar journey, ask questions, and share your experiences.
+Stay tuned for more updates, and let's embark on this career adventure together! 🌍💡
 
 {% include tag.html tag="added" %}
 - Some scheduled changelogs, tweets, and slack messages queued up this weekend and were not published on time. We fixed the issue and all delayed publications should be out.
