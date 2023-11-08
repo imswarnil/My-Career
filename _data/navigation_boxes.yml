@@ -1,8 +1,8 @@
 # Boxes include navigation
 
-- title: Getting Started
+- title: College Life & Placement 
   desc: Get started fast with installation and theme setup instructions
-  icon: cog
+  icon: uploads/icons/graduate-student.png
   doc: installation
 
 - title: Theme Features
