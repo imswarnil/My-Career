@@ -24,6 +24,29 @@ hero:
 
 {% include ad.html type="top-leaderboard" %}
 
+<div class="uk-container uk-container-medium uk-flex uk-flex-middle uk-flex-wrap">
+    <!-- Left side: Embedded YouTube Video -->
+    <div class="uk-width-1-2@s uk-text-center@s uk-margin-top@m">
+        <p class="hero-image uk-text-center">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uV3eTXpEBOg" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </p>
+    </div>
+    <!-- Right side: Title, Heading, and Buttons -->
+    <div class="uk-width-1-2@s uk-margin-top@m" style="padding-left: 20px;">
+        <h1 class="uk-heading-small uk-margin-remove-top">Welcome To Bangalore Job Seekers Guide</h1>
+        <p class="uk-text-lead">Follow Swarnil's path to succeed in Bangalore with job search, relocation guidance, and valuable articles and videos tailored for Bangalore job seekers.</p>
+        <div class="hero-buttons uk-flex uk-flex-wrap">
+            <a class="uk-button uk-button-primary" href="https://www.youtube.com/watch?v=uV3eTXpEBOg" data-uk-lightbox>
+                <span data-uk-icon="icon: play; ratio: 1"></span> Watch Video
+            </a>
+            <a class="uk-button uk-button-border-primary uk-margin-left" href="/link-to-article">Read Article</a>
+        </div>
+    </div>
+</div>
+
+
 {% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}
 
 {% include ad.html %}
