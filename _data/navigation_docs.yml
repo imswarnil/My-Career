@@ -1,7 +1,7 @@
 - title: Getting Started
   url : /college/   
   docs:
-  - 1-kota-unsuccess.md
+  - kota-unsuccess
   - setup
   - navigation
   - footer
