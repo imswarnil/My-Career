@@ -2,7 +2,7 @@
 layout: page
 title: Thanks
 permalink: /guide/
-width: small
+width: large
 ---
 
 <div class="uk-container uk-container-medium uk-flex uk-flex-middle uk-flex-wrap">
