@@ -1,8 +1,8 @@
 ---
-title: From Kota's Defeat to College's Fresh Start
-subtitle:A fresh start as a Computer Science fresher after Kota's defeat."
-author: Swarnil
-tags: [Colleg & Placements]
+title: From Kota defeat to colleges Fresh Start
+subtitle: A fresh start as a Computer Science fresher after Kota defeat."
+author: sara
+tags: [setup]
 comments: true
 ---
 
