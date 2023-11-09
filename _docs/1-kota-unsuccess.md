@@ -1,12 +1,11 @@
 ---
-title: Theme installation
-subtitle: This document covers the setup and options of theme feature described in the doc title
-author: sara
-tags: [setup]
+title: From Kota's Defeat to College's Fresh Start
+subtitle:A fresh start as a Computer Science fresher after Kota's defeat."
+author: Swarnil
+tags: [Colleg & Placements]
 comments: true
-
 ---
-<iframe width="358" height="637" src="https://www.youtube.com/embed/ZOrvVyRufBg" title="Visited Goa With Friends - Travel - 1 #travel #goa #friends #softwareengineer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
   {% include ad.html type="small-leaderboard" %}
 
