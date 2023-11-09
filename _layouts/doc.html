@@ -11,7 +11,7 @@ layout: default
             <div class="sidebar-fixed-width uk-visible@m">
                 <div class="sidebar-docs uk-margin-top">
                     {% for section in site.data.navigation_docs %}
-                    <h5>{{ section.title }}</h5>
+                    <h5> <a href=" {{ section.url }} ">{{ section.title }}</a></h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     {% for doc in section.docs %}
                       {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
