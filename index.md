@@ -2,7 +2,7 @@
 layout: page
 width: expand
 hero:
-    title: Welcome To Bangalore Job Seekers Guide
+    title: Welcome To Job & Career Project
     subtitle: Follow Swarnil's path to succeed in Bangalore with job search, relocation guidance, and valuable articles and videos tailored for Bangalore job seekers.
     image: knowledge.svg
     search: true
