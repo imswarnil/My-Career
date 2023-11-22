@@ -1,10 +1,10 @@
 title :        Swarnil Job & Career Roadmap
-description:      
+description:        
 lang:               en
 baseurl:            ""
 permalink:          /:title/
 url:                "https://job.imswarnil.com/"
-logo: /Job-Map.png
+logo:               /Job-Map.png
 navbar:
     sticky:         true
     search:         true
