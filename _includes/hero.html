@@ -19,10 +19,9 @@
                 <div class="uk-width-1-2@s uk-margin-top@m">
                     <h1 class="uk-heading-primary uk-margin-remove-top">{{ page.hero.title }}</h1>
                     {% if page.hero.subtitle %}<p class="uk-text-lead">{{ page.hero.subtitle }}</p>{% endif %}
+
                     {% if page.hero.search %}
                         <div class="hero-search">
-
-
                             <!-- Html Elements for Search -->
                             <div class="uk-position-relative">
                                 <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
@@ -31,19 +30,16 @@
                                 </form>
                                 <ul id="search-hero-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
                             </div>
-                           <!-- Initialize search script -->
-<script>
-    // Wait for the DOM to be ready
-    document.addEventListener('DOMContentLoaded', function () {
-        SimpleJekyllSearch({
-            searchInput: document.getElementById('search-hero'),
-            resultsContainer: document.getElementById('search-hero-results'),
-            noResultsText: '<li class="no-results">No results found</li>',
-            searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-            json: "/search.json"
-        });
-    });
-</script>
+                            <script>
+                                SimpleJekyllSearch({
+                                    searchInput: document.getElementById('search-hero'),
+                                    resultsContainer: document.getElementById('search-hero-results'),
+                                    noResultsText: '<li class="no-results">No results found</li>',
+                                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                    json: "/search.json"
+                                });
+                                searchResults("search-hero");
+                            </script>
                         </div>
                     {% endif %}
                 </div>
