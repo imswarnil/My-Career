@@ -5,6 +5,7 @@ layout: null
   {% for doc in site.docs %}
     {
       "title"    : "{{ doc.title | escape }}",
+      "subtitle" : "{{ subtitle.title | escape }}",
       "category" : "{{ doc.category }}",
       "tags"     : "{{ doc.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ doc.url }}",
