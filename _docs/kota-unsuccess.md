@@ -1,8 +1,9 @@
 ---
 title: From Kota defeat to colleges Fresh Start
+tags:
+- setup
 subtitle: A fresh start as a Computer Science fresher after Kota defeat."
 author: sara
-tags: [setup]
 comments: true
 ---
 

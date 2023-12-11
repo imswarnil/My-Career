@@ -2,10 +2,11 @@
 layout: page
 width: expand
 hero:
-    title: Welcome To Job & Career Project
-    subtitle: Follow Swarnil's path to succeed in Bangalore with job search, relocation guidance, and valuable articles and videos tailored for Bangalore job seekers.
-    image: knowledge.svg
-    search: true
+  title: Welcome To Job & Career Project
+  subtitle: Follow Swarnil's path to succeed in Bangalore with job search, relocation
+    guidance, and valuable articles and videos tailored for Bangalore job seekers.
+  image: knowledge.svg
+  search: true
 ---
 
  <div class="uk-section section-hero uk-position-relative" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">

@@ -1,7 +1,10 @@
 ---
 title: How To Get Job In Bangalore
+date: 2023-09-18 00:00:00 Z
+categories:
+- news
+- featured
 author: swarnil
-categories: [news, featured]
 ---
 
 In today's rapidly evolving digital landscape, the Information Technology (IT) industry offers a plethora of opportunities for career growth and development. Whether you're a recent graduate or looking to make a career transition, breaking into the IT sector can be a rewarding endeavor. Here's a detailed plan of action for landing a job in the IT industry, using Swarnil, a recent college graduate, as an example.

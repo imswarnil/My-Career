@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Thanks
-permalink: /college/
+permalink: "/college/"
+layout: page
 width: small
 ---
 

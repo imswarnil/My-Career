@@ -1,103 +1,109 @@
-title :        Swarnil Job & Career Roadmap
-description:        
-lang:               en
-# baseurl:            "/My-Career-Roadmap"
-permalink:          /:title/
-url:                "https://job.imswarnil.com"
-logo:               /Job-Map.png
+---
+title: Swarnil Job & Career Roadmap
+timezone: UTC
+collections:
+  changelogs:
+    title: Changelogs
+    output: false
+  docs:
+    title: Docs
+    output: true
+  faqs:
+    title: Faqs
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: docs
+  values:
+    layout: doc
+description: 
+lang: en
+permalink: "/:title/"
+url: https://job.imswarnil.com
+logo: "/Job-Map.png"
 navbar:
-    sticky:         true
-    search:         true
+  sticky: true
+  search: true
 author:
-    name:           Swarnil Singhai
-    title:          Lead Developer  
-    avatar:         avatar-tom.png
+  name: Swarnil Singhai
+  title: Lead Developer
+  avatar: avatar-tom.png
 authors:
-    john:
-      name:         John Brown
-      title:        Support     
-      avatar:       avatar-john.png
-    evan:
-      name:         Evan Wells
-      title:        Support    
-      avatar:       avatar-evan.png
-    sara:
-      name:         Sara Galen
-      title:        Lead Developer     
-      avatar:       avatar-sara.png
-    alex:
-      name:         Alex Koch
-      title:        Design Engineer     
-      avatar:       avatar-alex.png
-    daniel:
-      name:         Daniel Shultz
-      title:        Developer      
-      avatar:       avatar-daniel.png
-    tom:
-      name:         Tom Farrell
-      title:        Developer     
-      avatar:       avatar-tom.png
-
+  john:
+    name: John Brown
+    title: Support
+    avatar: avatar-john.png
+  evan:
+    name: Evan Wells
+    title: Support
+    avatar: avatar-evan.png
+  sara:
+    name: Sara Galen
+    title: Lead Developer
+    avatar: avatar-sara.png
+  alex:
+    name: Alex Koch
+    title: Design Engineer
+    avatar: avatar-alex.png
+  daniel:
+    name: Daniel Shultz
+    title: Developer
+    avatar: avatar-daniel.png
+  tom:
+    name: Tom Farrell
+    title: Developer
+    avatar: avatar-tom.png
 social:
-    email:
-    website:
-    facebook:       https://www.facebook.com/
-    flickr:
-    dribbble:
-    github:
-    googleplus:
-    instagram:      https://www.instagram.com/
-    linkedin:
-    pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
-    youtube:
-
+  email: 
+  website: 
+  facebook: https://www.facebook.com/
+  flickr: 
+  dribbble: 
+  github: 
+  googleplus: 
+  instagram: https://www.instagram.com/
+  linkedin: 
+  pinterest: 
+  twitter: https://twitter.com/
+  vimeo: https://vimeo.com/
+  youtube: 
 share:
-    post:           true # Display share buttons on a post page
-    doc:            true # Display share buttons on a doc page
-    twitter:        imswarnil # Enable by adding Twitter handle 
-    facebook:       true 
-
+  post: true
+  doc: true
+  twitter: imswarnil
+  facebook: true
 footer:
-    copyright:      Made by <a href="https://unbound.studio/">Unbound Studio</a> in Cleveland.
+  copyright: Made by <a href="https://unbound.studio/">Unbound Studio</a> in Cleveland.
 disqus:
-    shortname:  bangalore-job-seekers-guide
+  shortname: bangalore-job-seekers-guide
 google_analytics: G-67CK71YPKN
-paginate:           10
-paginate_path:      "/blog/:num/"
-uploads:            /uploads/
-markdown:           kramdown
-highlighter:        rouge
+paginate: 10
+paginate_path: "/blog/:num/"
+uploads: "/uploads/"
+markdown: kramdown
+highlighter: rouge
 data-ad-client: ca-pub-1291242080282540
 gems:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-avatar
-  - jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-gist
+- jekyll-avatar
+- jekyll-sitemap
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
+- Gemfile
+- Gemfile.lock
+- node_modules
 sass:
-  style:            compressed
-
-collections:
-  docs:
-    output:         true
-  faqs:
-    output:         false
-  changelogs:
-    output:         false
-defaults:
-  - scope:
-      path:         ""
-      type:         posts
-    values:
-      layout:       post
-  - scope:
-      path:         ""
-      type:         docs
-    values:
-      layout:       doc
+  style: compressed

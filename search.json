@@ -1,6 +1,7 @@
 ---
-layout: null
+layout: 
 ---
+
 [
   {% for doc in site.docs %}
     {

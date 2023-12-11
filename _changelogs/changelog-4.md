@@ -1,7 +1,8 @@
 ---
-title: 🚀 Version 1.0.0 - Initial Release (Nov,23)
-date: 2023-11-08
+title: "\U0001F680 Version 1.0.0 - Initial Release (Nov,23)"
+date: 2023-11-08 00:00:00 Z
 ---
+
 🚀 Welcome to 'Swarnil's Career Roadmap' - Your Career Companion!
 
 In this initial release, I am excited to start documenting my corporate journey working as software engineer in IT company as salesforce professional. This Project aim to help other poeple career success by learning and following my path.

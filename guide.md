@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Thanks
-permalink: /guide/
+permalink: "/guide/"
+layout: page
 width: large
 ---
 
