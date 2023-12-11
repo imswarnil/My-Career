@@ -7,7 +7,7 @@ subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imp
 author: evan
 ---
 
-Create new doc post entries in `_docs` folder, similar to creating posts, but with following front matter settings:
+Create Swarnil A new doc post entries in `_docs` folder, similar to creating posts, but with following front matter settings:
 
 ```yml
 ---
