@@ -5,7 +5,7 @@ hero:
   title: Welcome To Job & Career Project
   subtitle: Follow Swarnil's path to succeed in Bangalore with job search, relocation
     guidance, and valuable articles and videos tailored for Bangalore job seekers.
-  image: /uploads/knowledge.svg
+  image: "/uploads/knowledge.svg"
   search: true
 ---
 
