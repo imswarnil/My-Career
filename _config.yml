@@ -32,7 +32,7 @@ description:
 lang: en
 permalink: "/:title/"
 url: https://job.imswarnil.com
-logo: "/Job-Map.png"
+logo: "/uploads/Swarnil-Career-Map-Logo.png"
 navbar:
   sticky: true
   search: true
