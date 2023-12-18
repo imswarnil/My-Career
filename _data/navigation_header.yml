@@ -13,13 +13,14 @@ left:
   - title: Blog
     url: /blog/
 
-  - title: Course
+  - title: Changelogs
     dropdown:
 
       - title: Timeline Style
         url: /changelog-timeline/
 
-     
+      - title: Post Style
+        url: /changelog-posts/
 
 
 # Navbar right menu navigation links
@@ -27,7 +28,7 @@ left:
 right:
 
   - title: Changelog
-    url: /changelog/
+    url: /changelog-timeline/
     button: primary-outline
 
   - title: Contact
