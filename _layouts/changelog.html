@@ -2,13 +2,6 @@
 layout: default
 ---
 
-<<<<<<< HEAD
-=======
----
-layout: default
----
-
->>>>>>> bfe29b7b4641173c36edb10ce10de4280a5629c1
 <div class="uk-section">
     <div class="uk-container container-xxsmall">
         <div class="uk-grid-medium" uk-grid>
@@ -19,54 +12,7 @@ layout: default
                 <div class="article-content">
                     {{ content }}
                 </div>
-
-                {% assign changelogs = (site.changelogs | sort: 'date') | reverse %}
-                {% for changelog in changelogs %}
-                    <article class="uk-article uk-margin-medium-top">
-                        <hr class="uk-margin-medium-bottom">
-                        <div class="uk-position-relative">
-                            <h2>{{ changelog.title }}</h2>
-                            <div class="uk-position-center-left-out uk-position-large uk-visible@m uk-text-small uk-text-muted">
-                                {% if changelog.date %}
-                                <time datetime="{{ changelog.date | date_to_xmlschema }}" itemprop="datePublished">
-                                    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                                    {{ changelog.date | date: date_format }}
-                                </time>
-                                {% endif %}
-                            </div>
-                            <div class="uk-hidden@m uk-text-small uk-text-muted uk-margin-bottom">
-                                {% if changelog.date %}
-                                <time datetime="{{ changelog.date | date_to_xmlschema }}" itemprop="datePublished">
-                                    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                                    {{ changelog.date | date: date_format }}
-                                </time>
-                                {% endif %}
-                            </div>
-                        </div> 
-                        <div class="article-content">{{ changelog.content }}</div>
-                    </article>
-                {% endfor %}
-            </div>
-
-            <!-- Sidebar (col-3) -->
-            <div class="uk-width-3-10@m">
-                <div class="sticky-sidebar">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
-                            crossorigin="anonymous"></script>
-                    <!-- Skyscraper (160×600) -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:160px;height:600px"
-                         data-ad-client="ca-pub-1291242080282540"
-                         data-ad-slot="4394096538"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            </div>
-
-        </div>
-
-        {% assign changelogs = (site.changelogs | sort: 'date') | reverse %}
+                 {% assign changelogs = (site.changelogs | sort: 'date') | reverse %}
         {% for changelog in changelogs %}
             <article class="uk-article uk-margin-medium-top">
                 <hr class="uk-margin-medium-bottom">
@@ -92,7 +38,27 @@ layout: default
                 <div class="article-content">{{ changelog.content }}</div>
             </article>
         {% endfor %}
+            </div>
+
+            <!-- Sidebar (col-3) -->
+            <div class="uk-width-3-10@m">
+                <div class="sticky-sidebar">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
+                            crossorigin="anonymous"></script>
+                    <!-- Skyscraper (160×600) -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:160px;height:600px"
+                         data-ad-client="ca-pub-1291242080282540"
+                         data-ad-slot="4394096538"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+       
 
     </div>
 </div>
-
