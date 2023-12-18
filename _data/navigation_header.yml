@@ -28,7 +28,7 @@ left:
 right:
 
   - title: Changelog
-    url: /changelog-timeline/
+    url: /changelog/
     button: primary-outline
 
   - title: Contact
