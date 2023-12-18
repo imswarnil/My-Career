@@ -30,7 +30,7 @@ hero:
     <div class="uk-width-1-2@s uk-text-center@s uk-margin-top@m">
         <p class="hero-image uk-text-center">
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/uV3eTXpEBOg" frameborder="0" allowfullscreen></iframe>
+                <iframe width="auto" height="315" src="https://www.youtube.com/embed/uV3eTXpEBOg" frameborder="0" allowfullscreen></iframe>
             </div>
         </p>
         <!-- JSON-LD for Video -->
