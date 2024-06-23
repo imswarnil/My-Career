@@ -2,41 +2,80 @@
 layout: default
 ---
 
-<div class="uk-section">
-    <div class="uk-container container-xxsmall">
+<section class="section">
+    <div class="container is-max-desktop">
 
-        <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+        <h1 class="title">{{ page.title | escape }}</h1>
 
-        <div class="article-content">
+        <div class="content">
             {{ content }}
         </div>
 
-        {% assign journeys = (site.journeys | sort: 'date') | reverse %}
-        {% for journey in journeys %}
-            <article class="uk-article uk-margin-medium-top">
-                <hr class="uk-margin-medium-bottom">
-                <div class="uk-position-relative">
-                    <h2>{{ journey.title }}</h2>
-                    <div class="uk-position-center-left-out uk-position-large uk-visible@m uk-text-small uk-text-muted">
-                        {% if journey.date %}
-                        <time datetime="{{ journey.date | date_to_xmlschema }}" itemprop="datePublished">
-                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                            {{ journey.date | date: date_format }}
-                        </time>
-                        {% endif %}
+        {% assign changelogs = site.changelogs | sort: 'date' | reverse %}
+
+        {% for changelog in changelogs %}
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="heading">{{ changelog.date | date: site.date_format | default: "%b %-d, %Y" }}</p>
+                    <h2 class="title is-4">{{ changelog.title }}</h2>
+                    <div class="content">
+                        {{ changelog.content }}
                     </div>
-                    <div class="uk-hidden@m uk-text-small uk-text-muted uk-margin-bottom">
-                        {% if journey.date %}
-                        <time datetime="{{ journey.date | date_to_xmlschema }}" itemprop="datePublished">
-                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                            {{ journey.date | date: date_format }}
-                        </time>
-                        {% endif %}
-                    </div>
-                </div> 
-                <div class="article-content">{{ journey.content }}</div>
-            </article>
+                </div>
+            </div>
         {% endfor %}
 
     </div>
-</div>
+</section>
+
+<style>
+.timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #3273dc;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+    width: calc(50% - 1.5rem);
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    transform: translateX(50%);
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #3273dc;
+    border-radius: 50%;
+}
+</style>

@@ -1,8 +1,8 @@
-<footer class="uk-section uk-text-center uk-text-muted">
-    <div class="uk-container uk-container-small">
+<footer class="section has-text-centered has-text-grey">
+    <div class="container is-max-desktop">
 
         <div>
-            <ul class="uk-subnav uk-flex-center">
+            <ul class="is-flex is-justify-content-center is-align-items-center">
                 {% for link in site.data.navigation_footer %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
@@ -10,22 +10,38 @@
                         {% assign domain = '' | relative_url %}
                     {% endif %}
                     {% if link.url == page.url %}
-                        {% assign current = ' class="uk-active"' %}
+                        {% assign current = ' has-text-primary' %}
                     {% else %}
-                        {% assign current = null %}
+                        {% assign current = '' %}
                     {% endif %}
                     {% if link.title %}
-                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                        <li class="mx-2{{ current }}"><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
         </div>
-        <div class="uk-margin-medium">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+        <div class="my-5">
+            <div class="is-flex is-justify-content-center">
                 {% include social-networks.html %}
             </div>
         </div>
-        <div class="uk-margin-medium uk-text-small copyright link-secondary">{{ site.footer.copyright }}</div>
+        <div class="my-5 is-size-7">{{ site.footer.copyright }}</div>
     </div>
 </footer>
 
+<style>
+    .footer {
+        background-color: #f5f5f5;
+        padding: 2rem 1.5rem;
+    }
+    .footer .menu-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .footer .menu-list li {
+        margin-bottom: 0.5rem;
+    }
+    .footer .menu-list li a:hover {
+        color: #3273dc !important;
+    }
+</style>

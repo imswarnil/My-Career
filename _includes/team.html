@@ -1,13 +1,13 @@
-<div class="uk-section section-team">
-    <div class="uk-container uk-container-expand">
+<div class="section section-team">
+    <div class="container is-fluid">
 
         {% if include.title %}
-            <h2 class="uk-h1 uk-text-center">{{ include.title }}</h2>
+            <h2 class="title has-text-centered">{{ include.title }}</h2>
         {% endif %}
 
-        {% if include.subtitle %}<p class="uk-text-lead uk-text-center">{{ include.subtitle | escape }}</p>{% endif %}
+        {% if include.subtitle %}<p class="subtitle has-text-centered">{{ include.subtitle | escape }}</p>{% endif %}
 
-        <div class="uk-margin-medium-top uk-grid-small uk-flex-center uk-text-center uk-margin-medium-top" data-uk-grid>
+        <div class="columns is-multiline is-centered has-text-centered mt-6">
 
         {% if include.authors %}
             {% assign authors = include.authors | split: ", " %}
@@ -23,8 +23,8 @@
                 {% assign item = author[1] %}
             {% endif %}
 
-            <div>
-                <div class="uk-card">
+            <div class="column is-one-quarter">
+                <div class="card">
                     {% if item.avatar %}
                         {% if item.avatar contains 'http' %}
                             {% assign domain = '' %}
@@ -32,10 +32,16 @@
                             {% assign domain = site.uploads | absolute_url %}
                         {% endif %}
 
-                        <img class="uk-border-circle" src="{{ domain }}{{ item.avatar }}" alt="{{ item.name }}">
+                        <div class="card-image">
+                            <figure class="image is-128x128 is-inline-block">
+                                <img class="is-rounded" src="{{ domain }}{{ item.avatar }}" alt="{{ item.name }}">
+                            </figure>
+                        </div>
                     {% endif %}
-                    <h5 class="uk-margin-remove-bottom uk-margin-top">{{ item.name }}</h5>
-                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top">{{ item.title }}</p>
+                    <div class="card-content">
+                        <h5 class="title is-5">{{ item.name }}</h5>
+                        <p class="subtitle is-6">{{ item.title }}</p>
+                    </div>
                 </div>
             </div>
         {% endfor %}

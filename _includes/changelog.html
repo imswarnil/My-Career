@@ -1,12 +1,11 @@
-<div class="tm-timeline uk-margin-large-top">
+<div class="timeline mt-6">
     {% for version in site.data.changelog %}
-    <div class="tm-timeline-entry">
-        <div class="tm-timeline-time">
-            <h5>{{ version.date }}</h5>
-        </div>
-        <div class="tm-timeline-body">
-            <h3 class="uk-flex uk-flex-middle">{{ version.title }}{% if version.label %}<span class="uk-label uk-margin-small-left">{{ version.label }}</span>{% endif %}</h3>
-            <ul class="uk-list">
+    <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+            <p class="heading">{{ version.date }}</p>
+            <h3 class="is-flex is-align-items-center">{{ version.title }}{% if version.label %}<span class="tag ml-2">{{ version.label }}</span>{% endif %}</h3>
+            <ul class="content">
                 {% for item in version.list %}
                 <li>{{ item }}</li>
                 {% endfor %}
@@ -15,3 +14,53 @@
     </div>
     {% endfor %}
 </div>
+
+<!-- Custom styles for Bulma timeline component -->
+<style>
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1.5rem 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -1rem;
+    top: 1.5rem;
+    background-color: #3273dc;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.timeline-content {
+    margin-left: 2rem;
+}
+
+.heading {
+    font-size: 0.9rem;
+    color: #3273dc;
+}
+
+.tag {
+    background-color: #3273dc;
+    color: white;
+}
+
+.is-flex {
+    display: flex;
+}
+
+.is-align-items-center {
+    align-items: center;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+</style>

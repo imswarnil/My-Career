@@ -1,27 +1,119 @@
-<div class="tm-timeline uk-margin-large-top">
-    {% for version in site.data.journey %}
-      <div class="tm-timeline-entry">
-        <div class="tm-timeline-time">
-          <h5>{{ version.date }}</h5>
-          {% include ad.html type="skyscraper" %}
-        </div>
-        <div class="tm-timeline-body">
-          <h3 class="uk-flex uk-flex-middle">{{ version.title }}{% if version.label %}<span class="uk-label uk-margin-small-left">{{ version.label }}</span>{% endif %}</h3>
-          {% if version.video_id %}
-            <div class="uk-card uk-card-default uk-card-body uk-card-small uk-box-shadow-medium">
-              <div class="uk-responsive-width">
-                <iframe src="https://www.youtube-nocookie.com/embed/{{ version.video_id }}?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-responsive></iframe>
-              </div>
-            </div>
-          {% endif %}
-          <ul class="uk-list">
-            {% for item in version.list %}
-              <li>{{ item }}</li>
+{% if include.columns %}
+    {% assign columns = include.columns %}
+    {% if columns == '1' %}
+        {% assign container_class = 'is-max-desktop' %}
+    {% elsif columns == '2' %}
+        {% assign container_class = 'is-max-widescreen' %}
+    {% else %}
+        {% assign container_class = '' %}
+    {% endif %}
+{% else %}
+    {% assign columns = 3 %}
+    {% assign container_class = '' %}
+{% endif %}
+
+<section class="section">
+    <div class="container {{ container_class }}">
+
+        {% if include.title %}
+            <h2 class="title has-text-centered">{{ include.title }}</h2>
+        {% endif %}
+
+        {% if include.subtitle %}
+            <p class="subtitle has-text-centered">{{ include.subtitle | escape }}</p>
+        {% endif %}
+
+        <div class="timeline">
+            {% for item in site.data.navigation_boxes %}
+                {% if item.title %}
+                {% assign doc_url = item.doc | prepend:"/docs/" | append:"/" %}
+                {% assign doc = site.docs | where:"url", doc_url | first %}
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <p class="heading">{{ item.date | date: "%B %d, %Y" }}</p>
+                        <a href="{{ doc.url | relative_url }}">
+                            {% if item.icon %}
+                            <figure class="image is-48x48 is-inline-block">
+                                <img src="{{ item.icon }}" alt="{{ item.desc }}">
+                            </figure>
+                            {% endif %}
+                            <h3 class="title is-4">{{ item.title }}</h3>
+                        </a>
+                        {% if item.desc %}
+                        <p>{{ item.desc }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
             {% endfor %}
-          </ul>
-          {% include ad.html type="button" %}
         </div>
-      </div>
-    {% endfor %}
-  </div>
-  
+
+    </div>
+</section>
+
+<style>
+.timeline {
+    position: relative;
+    padding: 1.5rem 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #dbdbdb;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3273dc;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #dbdbdb;
+}
+
+.timeline-content {
+    position: relative;
+    width: calc(50% - 2rem);
+    padding: 1rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 50%;
+    transform: translateX(0%);
+}
+
+.timeline-item:nth-child(odd) .timeline-marker {
+    left: calc(50% - 7px);
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even) .timeline-marker {
+    left: calc(50% - 7px);
+    transform: translateX(-50%);
+}
+</style>

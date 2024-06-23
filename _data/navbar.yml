@@ -1,0 +1,44 @@
+# Navbar left menu navigation links
+left:
+  - title: Home
+    url: /
+    icon: 🏠
+
+  - title: Quick Start
+    url: /docs/kota-unsuccess/
+    icon: 🚀
+
+  - title: My Journey
+    url: /journey/
+    icon: 🛤️
+
+  - title: Blog
+    url: /blog/
+    icon: 📝
+
+  - title: More
+    icon: 📄
+    dropdown:
+      - title: Read Storis
+        url: /Story/
+        icon: 📰 
+      - title: Notes
+        url: /changelog-posts/
+        icon: 📃
+
+# Navbar right menu navigation links
+right:
+  - title: Changelog
+    url: /changelog-timeline/
+    button: primary-outline
+    icon: 🕒
+
+  - title: Contact
+    url: /contact/
+    button: success
+    icon: 📞
+
+  - title: Start It On GitHub
+    url: https://github.com/YOUR_REPOSITORY
+    button: dark
+    icon: ⭐

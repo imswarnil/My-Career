@@ -1,16 +1,13 @@
 {% if include.lightbox == 'true' %}
-<figure data-uk-lightbox="animation: slide">
-    <a class="uk-inline" href="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}"{% if include.caption %} caption="{{ include.caption }}"{% endif %}>
-        <img src="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}>
-        <div class="uk-position-center">
-            <span data-uk-overlay-icon></span>
-        </div>
+<figure class="image is-4by3">
+    <a href="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}" data-lightbox="image" {% if include.caption %}data-title="{{ include.caption }}"{% endif %}>
+        <img src="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}" {% if include.alt %}alt="{{ include.alt }}"{% endif %}>
     </a>
-    {% if include.caption %}<figcaption data-uk-grid class="uk-flex-right"><span class="uk-width-auto">{{ include.caption }}</span></figcaption>{% endif %}
+    {% if include.caption %}<figcaption class="has-text-right">{{ include.caption }}</figcaption>{% endif %}
 </figure>
 {% else %}
-<figure>
-    <img src="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}>
-    {% if include.caption %}<figcaption data-uk-grid class="uk-flex-right"><span class="uk-width-auto">{{ include.caption }}</span></figcaption>{% endif %}
+<figure class="image is-4by3">
+    <img src="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}" {% if include.alt %}alt="{{ include.alt }}"{% endif %}>
+    {% if include.caption %}<figcaption class="has-text-right">{{ include.caption }}</figcaption>{% endif %}
 </figure>
 {% endif %}

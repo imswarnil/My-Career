@@ -1,6 +1,5 @@
 ---
 layout: page
-width: expand
 hero:
   title: Welcome To Job & Career Project
   subtitle: Follow Swarnil's path to succeed in Bangalore with job search, relocation
@@ -10,14 +9,12 @@ hero:
 ---
 {% include ad.html type="top-leaderboard" %}
 
-<div class="uk-container uk-container-medium uk-flex uk-flex-middle uk-flex-wrap">
+<div class="container is-medium is-flex is-align-items-center is-flex-wrap-wrap">
     <!-- Left side: Embedded YouTube Video -->
-    <div class="uk-width-1-2@s uk-text-center@s uk-margin-top@m">
-        <p class="hero-image uk-text-center">
-            <div class="video-container">
-                <iframe width="auto" height="315" src="https://www.youtube.com/embed/uV3eTXpEBOg" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </p>
+    <div class="column is-half has-text-centered mt-5">
+        <div class="video-container">
+            <iframe width="auto" height="315" src="https://www.youtube.com/embed/uV3eTXpEBOg" frameborder="0" allowfullscreen></iframe>
+        </div>
         <!-- JSON-LD for Video -->
         <script type="application/ld+json">
             {
@@ -36,17 +33,40 @@ hero:
         </script>
     </div>
     <!-- Right side: Title, Heading, and Buttons -->
-    <div class="uk-width-1-2@s uk-margin-top@m" style="padding-left: 20px;">
-        <h1 class="uk-heading-small uk-margin-remove-top">Welcome To Bangalore Job Seekers Guide</h1>
-        <p class="uk-text-lead">Follow Swarnil's path to succeed in Bangalore with job search, relocation guidance, and valuable articles and videos tailored for Bangalore job seekers.</p>
-        <div class="hero-buttons uk-flex uk-flex-wrap">
-            <a class="uk-button uk-button-primary" href="https://www.youtube.com/watch?v=uV3eTXpEBOg" data-uk-lightbox>
-                <span data-uk-icon="icon: play; ratio: 1"></span> Watch Video
+    <div class="column is-half mt-5" style="padding-left: 20px;">
+        <h1 class="title is-3">Welcome To Bangalore Job Seekers Guide</h1>
+        <p class="subtitle is-5">Follow Swarnil's path to succeed in Bangalore with job search, relocation guidance, and valuable articles and videos tailored for Bangalore job seekers.</p>
+        <div class="buttons">
+            <a class="button is-primary" href="https://www.youtube.com/watch?v=uV3eTXpEBOg">
+                <span class="icon">
+                    <i class="fas fa-play"></i>
+                </span>
+                <span>Watch Video</span>
             </a>
-            <a class="uk-button uk-button-border-primary uk-margin-left" href="/link-to-article">Read Article</a>
+            <a class="button is-outlined is-primary ml-3" href="/link-to-article">Read Article</a>
         </div>
     </div>
 </div>
+
+<style>
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 1rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
 
 
 {% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}

@@ -2,45 +2,26 @@
 layout: default
 ---
 
-<div class="uk-section">
-    <div class="uk-container uk-container-expand">
-        <div class="uk-grid" uk-grid>
-
-            <!-- Left Sidebar (Sticky, Hidden on Mobile) -->
-            <aside class="uk-width-1-5@m uk-visible@m">
-                <div class="uk-sticky" uk-sticky="offset: 100; bottom: true;">
-                    <!-- Skyscraper Ad (Replace with your AdSense code) -->
-                    <div class="uk-margin-bottom">
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-client="ca-pub-1291242080282540"
-                             data-ad-slot="YOUR_SKYSCRAPER_AD_SLOT"
-                             data-ad-format="auto"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                </div>
-            </aside>
-
+    <div class="container">
+        <div class="columns">
             <!-- Main Content -->
-            <div class="uk-width-expand@m">
-                <article class="uk-article">
+            <div class="column">
+                <article class="content">
 
-                    <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+                    <h1 class="title">{{ page.title | escape }}</h1>
 
-                    <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                    <div class="content-meta mb-6">
                         {% include post-meta.html %}
                     </div>
 
-                    <div class="article-content link-primary">
+                    <div class="content">
                         {{ content }}
                         {% if site.share.post %}
                             {% include share.html %}
                         {% endif %}
                     </div>
 
-                    <hr class="uk-margin-medium">
+                    <hr class="my-6">
 
                     {% include paginate-post.html %}
 
@@ -50,71 +31,85 @@ layout: default
                         {% include disqus_comments.html %}
                     {% endif %}
                 </article>
-
-                <script>
-                    // Table of contents scroll to
-                    UIkit.scroll('#markdown-toc a', {
-                        duration: 400,
-                        offset: 120
-                    });
-                </script>
             </div>
 
             <!-- Right Sidebar (Sticky) -->
-            <aside class="uk-width-1-4@m">
-                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-sticky" uk-sticky="offset: 100; bottom: true;">
-                    <div class="uk-margin-bottom">
+            <aside class="column is-one-quarter">
+               
+             
+                  
                         <!-- Dummy Profile Card -->
-                        <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                            <img src="https://via.placeholder.com/150" alt="Author Image" class="uk-border-circle uk-margin-small-bottom">
-                            <h3 class="uk-card-title">Author Name</h3>
-                            <p>Description of the author.</p>
-                            <!-- Social Media Links -->
-                            <div class="uk-margin-top">
-                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: twitter"></a>
-                                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: facebook"></a>
-                                <a href="#" class="uk-icon-link" uk-icon="icon: instagram"></a>
+                        <div class="card mb-4">
+                            <div class="card-content">
+                                <figure class="image is-128x128">
+                                    <img class="is-rounded" src="https://via.placeholder.com/150" alt="Author Image">
+                                </figure>
+                                <h3 class="title is-4">Author Name</h3>
+                                <p>Description of the author.</p>
+                                <!-- Social Media Links -->
+                                <div class="mt-4">
+                                    <a href="#" class="icon mr-2">🐦</a>
+                                    <a href="#" class="icon mr-2">📘</a>
+                                    <a href="#" class="icon">📸</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Categories -->
-                    <div class="uk-margin-bottom">
-                        <h4>Categories</h4>
-                        <ul class="uk-list">
-                            <li><a href="#">Category 1</a></li>
-                            <li><a href="#">Category 2</a></li>
-                            <li><a href="#">Category 3</a></li>
-                        </ul>
-                    </div>
+                        <!-- Categories -->
+                        <div class="mb-4">
+                            <h4 class="title is-5">Categories</h4>
+                            <ul>
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Quick Start Guide -->
-                    <div class="uk-margin-bottom">
-                        <h4>Quick Start Guide</h4>
-                        <ul class="uk-list">
-                            <li><a href="#">Step 1</a></li>
-                            <li><a href="#">Step 2</a></li>
-                            <li><a href="#">Step 3</a></li>
-                        </ul>
-                    </div>
+                        <!-- Quick Start Guide -->
+                        <div class="mb-4">
+                            <h4 class="title is-5">Quick Start Guide</h4>
+                            <ul>
+                                <li><a href="#">Step 1</a></li>
+                                <li><a href="#">Step 2</a></li>
+                                <li><a href="#">Step 3</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Important Pages -->
-                    <div class="uk-margin-bottom">
-                        <h4>Important Pages</h4>
-                        <ul class="uk-list">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
-                    </div>
+                        <!-- Important Pages -->
+                        <div class="mb-4">
+                            <h4 class="title is-5">Important Pages</h4>
+                            <ul>
+                                <li><a href="#">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li>
+                                <li><a href="#">Page 3</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Donate Button -->
-                    <div class="uk-text-center">
-                        <a href="#" class="uk-button uk-button-primary uk-button-small">Donate</a>
+                        <!-- Donate Button -->
+                        <div class="has-text-centered">
+                            <a href="#" class="button is-primary is-small">Donate</a>
+                        </div>
                     </div>
                 </div>
             </aside>
 
         </div>
     </div>
-</div>
+
+<script>
+    // Table of contents scroll to
+    document.addEventListener('DOMContentLoaded', () => {
+        const tocLinks = document.querySelectorAll('#markdown-toc a');
+        tocLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').slice(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 120,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>

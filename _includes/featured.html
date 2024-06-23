@@ -1,28 +1,34 @@
 {% if include.tag %}
-<div class="uk-section section-featured{% if include.background %} uk-section-{{include.background}}{% endif %}">
-    <div class="uk-container uk-container-small">
+<section class="section{% if include.background %} has-background-{{include.background}}{% endif %}">
+    <div class="container is-max-desktop">
 
         {% if include.title %}
-        <h2 class="uk-h1 uk-text-center">{{ include.title }}</h2>
+        <h2 class="title has-text-centered">{{ include.title }}</h2>
         {% endif %}
 
         {% if include.subtitle %}
-            <p class="uk-text-center uk-text-lead">{{ include.subtitle | escape }}</p>
+            <p class="subtitle has-text-centered">{{ include.subtitle | escape }}</p>
         {% endif %}
         
-        <ul class="uk-list uk-list-large uk-margin-medium-top">
+        <ul class="list is-large mt-6">
         {% for post in site.posts %}
             {% if post.tags contains 'featured' or post.categories contains 'featured' %}
-            <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            <li><a class="box has-shadow-hover" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
             {% endif %}
         {% endfor %}
         {% for doc in site.docs %}
             {% if doc.tags contains include.tag or doc.categories contains include.tag %}
-            <li><a class="uk-box-shadow-hover-small" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+            <li><a class="box has-shadow-hover" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
             {% endif %}
         {% endfor %}
         </ul>
 
     </div>
-</div>
+</section>
 {% endif %}
+
+<style>
+.has-shadow-hover:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+</style>

@@ -1,39 +1,36 @@
 ---
 layout: default
 ---
-
-<div class="uk-section">
-    {% include ad.html type="top-leaderboard" %}
-    <div class="uk-container">
-        <div class="uk-grid-large" data-uk-grid>
-            <div class="sidebar-fixed-width uk-visible@m">
-                <div class="sidebar-docs uk-margin-top">
+{% include ad.html type="top-leaderboard" %}
+<div class="section my-3">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-quarter is-hidden-mobile">
+                <div class="menu">
                     {% for section in site.data.navigation_docs %}
-                    <h5> <a href=" {{ section.url }} ">{{ section.title }}</a></h5>
-                    <ul class="uk-nav uk-nav-default doc-nav">
-                    {% for doc in section.docs %}
-                      {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-                      {% assign p = site.docs | where:"url", doc_url | first %}
-                      <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-                    {% endfor %}
+                    <p class="menu-label"><a href="{{ section.url }}">{{ section.title }}</a></p>
+                    <ul class="menu-list">
+                        {% for doc in section.docs %}
+                          {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                          {% assign p = site.docs | where:"url", doc_url | first %}
+                          <li class="{% if doc_url == page.url %}is-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                        {% endfor %}
                     </ul>
-                    {% endfor %}
-
-                    {% include ad.html type="square" %}
-                
+                    {% endfor %}                
                 </div>
+                {% include ad.html type="square" %}
             </div>
 
-            <div class="uk-width-1-1 uk-width-expand@m">
-                <article class="uk-article">
-                    <h1 class="uk-article-title">{{ page.title | escape }}</h1>
-                    {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
+            <div class="column">
+                <article class="content">
+                    <h1 class="title">{{ page.title | escape }}</h1>
+                    {% if page.subtitle %}<p class="subtitle has-text-grey">{{ page.subtitle }}</p>{% endif %}
 
-                    <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
+                    <div class="media-content mb-4">
                         {% include post-meta.html %}
                     </div>
 
-                    <div class="article-content link-primary">
+                    <div class="content">
                         {{ content }}
                         {% if site.share.doc %}
                             {% include share.html %}
@@ -42,7 +39,7 @@ layout: default
 
                     {% include hook-post-content-doc.html %}
 
-                    <hr class="uk-margin-medium">
+                    <hr class="my-6">
 
                     {% include paginate-doc.html %}
 
@@ -52,57 +49,50 @@ layout: default
                         {% include disqus_comments.html %}
                     {% endif %}
                 </article>
-
-                <script>
-                    // Table of contents scroll to
-                    UIkit.scroll('#markdown-toc a', {
-                        duration: 400,
-                        offset: 120
-                    });
-                </script>
-
             </div>
+        </div>
     </div>
-  </div>
-</div>
+</section>
 
-<div class="uk-container uk-container-large">
-    {% include ad.html type="large-leaderboard" %}
-</div>
+<section class="section">
+    <div class="container">
+        {% include ad.html type="large-leaderboard" %}
+    </div>
+</section>
 
-<footer class="uk-section uk-section-primary uk-margin-medium-top">
-    <div class="uk-container uk-container-large">
-        <div data-uk-grid class="uk-child-width-1-4@l uk-child-width-1-2@s uk-child-width-1-1">
+<footer class="footer has-background-primary has-text-white">
+    <div class="container">
+        <div class="columns">
             <!-- Column 1: Project Description -->
-            <div>
-                <h3>{{ site.title }}</h3>
+            <div class="column">
+                <h3 class="title is-4 has-text-white">{{ site.title }}</h3>
                 <p>{{ site.description }}</p>
             </div>
             <!-- Column 2: Quick Links -->
-            <div>
-                <h3>Quick Links</h3>
-                <ul class="uk-list uk-list-bullet">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
+            <div class="column">
+                <h3 class="title is-4 has-text-white">Quick Links</h3>
+                <ul class="list">
+                    <li><a class="has-text-white" href="#">Link 1</a></li>
+                    <li><a class="has-text-white" href="#">Link 2</a></li>
+                    <li><a class="has-text-white" href="#">Link 3</a></li>
                 </ul>
             </div>
             <!-- Column 3: Responsive Autoplay Video -->
-            <div>
-                <h3>Watch My Story</h3>
-                <div class="uk-position-relative uk-inline uk-light">
+            <div class="column">
+                <h3 class="title is-4 has-text-white">Watch My Story</h3>
+                <div class="video-container">
                     <video controls playsinline loop muted autoplay poster="your-poster-image.jpg">
                         <source src="https://ik.imagekit.io/ikmedia/videos/woman-walking.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="uk-position-center uk-overlay uk-overlay-default">
+                    <div class="overlay has-background-white">
                         <p><a href="#">Read My Story</a></p>
                     </div>
                 </div>
             </div>
             <!-- Column 4: Square AdSense Ad -->
-            <div>
-                <h3>Advertisements</h3>
+            <div class="column">
+                <h3 class="title is-4 has-text-white">Advertisements</h3>
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
                     crossorigin="anonymous"></script>
                 <!-- Square (250 * 250) -->
