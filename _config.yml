@@ -31,7 +31,7 @@ defaults:
 description: 
 lang: en
 permalink: "/:title/"
-url: https://career.imswarnil.com
+url: 'https://career.imswarnil.com'
 logo: "/uploads/Swarnil-Career-Map-Logo.png"
 navbar:
   sticky: true
